@@ -92,7 +92,13 @@ const Header = () => {
             </Button>
           </div>
           <div className="md:hidden">
-            <button onClick={() => setIsOpen(!isOpen)} className="text-white">
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="text-white"
+              aria-label="Toggle navigation menu"
+              aria-expanded={isOpen}
+              aria-controls="mobile-menu"
+            >
               <Menu size={28} />
             </button>
           </div>
@@ -102,6 +108,10 @@ const Header = () => {
       <AnimatePresence>
         {isOpen && (
           <motion.div
+            id="mobile-menu"
+            role="dialog"
+            aria-modal="true"
+            aria-label="Navigation menu"
             initial={{ opacity: 0, y: "-100%" }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: "-100%" }}
