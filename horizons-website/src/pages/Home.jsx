@@ -18,8 +18,8 @@ const Home = () => {
     <>
       <Helmet>
         <title>Vivek Patel - Expert AI & Computer Vision Engineer</title>
-        <meta name="description" content="Portfolio of Vivek Patel, a freelance AI and Computer Vision Engineer specializing in production-grade deep learning, real-time processing, and intelligent automation workflows. Hire for results." />
-        <meta name="keywords" content="Vivek Patel, AI Engineer, Computer Vision, Freelance AI Developer, Deep Learning, Python, PyTorch, ONNX Optimization, Web Scraping, AI Automation" />
+        <meta name="description" content="Hire Vivek Patel - Freelance AI & Computer Vision Engineer in Europe. Expert in web scraping, n8n automation, YOLO, PyTorch, and LangChain. 94% performance improvements. €80/hour." />
+        <meta name="keywords" content="Vivek Patel, AI Engineer Europe, Computer Vision Freelancer, n8n Automation, Web Scraping Expert, YOLO, PyTorch, LangChain, Data Extraction, Python Developer Europe" />
         <link rel="canonical" href="https://www.vivekapatel.com/" />
       </Helmet>
       <Hero />

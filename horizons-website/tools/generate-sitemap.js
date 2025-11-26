@@ -18,11 +18,11 @@ const staticPages = [{
     lastmod: today,
     priority: '0.80'
 }, {
-    loc: `${BASE_URL}/privacy-policy`,
+    loc: `${BASE_URL}/legal`,
     lastmod: today,
     priority: '0.50'
 }, {
-    loc: `${BASE_URL}/cookie-policy`,
+    loc: `${BASE_URL}/data-policy`,
     lastmod: today,
     priority: '0.50'
 }];
