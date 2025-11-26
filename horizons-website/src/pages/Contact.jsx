@@ -139,28 +139,65 @@ const Contact = () => {
             </p>
           </motion.div>
 
+          {/* Social Proof Section */}
+          <motion.div
+            className="max-w-2xl mx-auto mb-8"
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+          >
+            <div className="flex flex-wrap justify-center gap-6 text-center">
+              <div className="flex items-center gap-2">
+                <span className="text-2xl font-bold text-accent-purple">100%</span>
+                <span className="text-gray-400 text-sm">Job Success<br/>on Upwork</span>
+              </div>
+              <div className="hidden sm:block w-px h-12 bg-white/10"></div>
+              <div className="flex items-center gap-2">
+                <span className="text-2xl font-bold text-accent-purple">11+</span>
+                <span className="text-gray-400 text-sm">Projects<br/>Delivered</span>
+              </div>
+              <div className="hidden sm:block w-px h-12 bg-white/10"></div>
+              <div className="flex items-center gap-2">
+                <span className="text-2xl font-bold text-accent-purple">5★</span>
+                <span className="text-gray-400 text-sm">Average<br/>Rating</span>
+              </div>
+            </div>
+          </motion.div>
+
           <div className="max-w-2xl mx-auto">
-            <motion.form 
+            <motion.form
               onSubmit={handleSubmit}
               className="space-y-6 bg-white/5 p-8 rounded-2xl border border-white/10"
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.7, delay: 0.4 }}
             >
-              <Input type="text" name="name" placeholder="Full Name" value={formState.name} onChange={handleInputChange} className="h-14" required disabled={isSubmitting} />
-              <Input type="email" name="email" placeholder="Email Address" value={formState.email} onChange={handleInputChange} className="h-14" required disabled={isSubmitting} />
-              <Select onValueChange={handleSelectChange} value={formState.budget} disabled={isSubmitting}>
-                <SelectTrigger className="h-14 text-gray-400">
-                  <SelectValue placeholder="Optional: Select Budget Range" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="< €5k">&lt; €5,000</SelectItem>
-                  <SelectItem value="€5k-€€10k">€5,000 - €10,000</SelectItem>
-                  <SelectItem value="€10k-€25k">€10,000 - €25,000</SelectItem>
-                  <SelectItem value="€25k+">€25,000+</SelectItem>
-                </SelectContent>
-              </Select>
-              <Textarea name="description" placeholder="Tell me about your project..." value={formState.description} onChange={handleInputChange} rows={5} required disabled={isSubmitting} />
+              <div>
+                <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">Full Name *</label>
+                <Input type="text" id="name" name="name" placeholder="John Doe" value={formState.name} onChange={handleInputChange} className="h-14" required disabled={isSubmitting} />
+              </div>
+              <div>
+                <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">Email Address *</label>
+                <Input type="email" id="email" name="email" placeholder="john@company.com" value={formState.email} onChange={handleInputChange} className="h-14" required disabled={isSubmitting} />
+              </div>
+              <div>
+                <label htmlFor="budget" className="block text-sm font-medium text-gray-300 mb-2">Budget Range (Optional)</label>
+                <Select onValueChange={handleSelectChange} value={formState.budget} disabled={isSubmitting}>
+                  <SelectTrigger id="budget" className="h-14 text-gray-400">
+                    <SelectValue placeholder="Select your budget range" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="< €5k">&lt; €5,000</SelectItem>
+                    <SelectItem value="€5k-€10k">€5,000 - €10,000</SelectItem>
+                    <SelectItem value="€10k-€25k">€10,000 - €25,000</SelectItem>
+                    <SelectItem value="€25k+">€25,000+</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
+              <div>
+                <label htmlFor="description" className="block text-sm font-medium text-gray-300 mb-2">Project Description *</label>
+                <Textarea id="description" name="description" placeholder="Tell me about your project, goals, and timeline..." value={formState.description} onChange={handleInputChange} rows={5} required disabled={isSubmitting} />
+              </div>
               <div className="text-center">
                  <button
                     type="submit"

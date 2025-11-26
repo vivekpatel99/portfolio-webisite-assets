@@ -102,9 +102,8 @@ const About = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.6, ease: 'easeOut', delay: 0 }}
-              className="relative"
             >
-              <div className="bg-white/5 rounded-lg p-6 border border-white/10 hover:border-accent-purple/50 transition-all">
+              <div className="relative bg-white/5 rounded-lg p-6 border border-white/10 hover:border-accent-purple/50 transition-all h-full">
                 <div className="absolute -top-4 left-6 w-8 h-8 bg-accent-purple rounded-full flex items-center justify-center text-white font-bold text-sm">1</div>
                 <h3 className="text-xl font-bold text-white mt-4 mb-3">Detailed Roadmap</h3>
                 <p className="text-gray-400 text-sm">A clear project roadmap with milestones delivered within 24 hours of kickoff.</p>
@@ -117,9 +116,8 @@ const About = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.6, ease: 'easeOut', delay: 0.1 }}
-              className="relative"
             >
-              <div className="bg-white/5 rounded-lg p-6 border border-white/10 hover:border-accent-purple/50 transition-all">
+              <div className="relative bg-white/5 rounded-lg p-6 border border-white/10 hover:border-accent-purple/50 transition-all h-full">
                 <div className="absolute -top-4 left-6 w-8 h-8 bg-accent-purple rounded-full flex items-center justify-center text-white font-bold text-sm">2</div>
                 <h3 className="text-xl font-bold text-white mt-4 mb-3">Regular Updates</h3>
                 <p className="text-gray-400 text-sm">Bi-weekly progress updates and proactive communication. No surprises.</p>
@@ -132,9 +130,8 @@ const About = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }}
-              className="relative"
             >
-              <div className="bg-white/5 rounded-lg p-6 border border-white/10 hover:border-accent-purple/50 transition-all">
+              <div className="relative bg-white/5 rounded-lg p-6 border border-white/10 hover:border-accent-purple/50 transition-all h-full">
                 <div className="absolute -top-4 left-6 w-8 h-8 bg-accent-purple rounded-full flex items-center justify-center text-white font-bold text-sm">3</div>
                 <h3 className="text-xl font-bold text-white mt-4 mb-3">Production Code</h3>
                 <p className="text-gray-400 text-sm">Production-ready code with comprehensive documentation and clear handover.</p>
@@ -147,9 +144,8 @@ const About = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.6, ease: 'easeOut', delay: 0.3 }}
-              className="relative"
             >
-              <div className="bg-white/5 rounded-lg p-6 border border-white/10 hover:border-accent-purple/50 transition-all">
+              <div className="relative bg-white/5 rounded-lg p-6 border border-white/10 hover:border-accent-purple/50 transition-all h-full">
                 <div className="absolute -top-4 left-6 w-8 h-8 bg-accent-purple rounded-full flex items-center justify-center text-white font-bold text-sm">4</div>
                 <h3 className="text-xl font-bold text-white mt-4 mb-3">Support & Optimization</h3>
                 <p className="text-gray-400 text-sm">30 days of post-delivery support and a complimentary optimization pass.</p>

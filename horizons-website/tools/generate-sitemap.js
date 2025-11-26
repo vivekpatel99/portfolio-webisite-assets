@@ -6,7 +6,12 @@ const BASE_URL = 'https://www.vivekapatel.com';
 const today = new Date().toISOString().split('T')[0];
 
 const projectSlugs = [
-    'social-media-app',
+    'Automated-Data-Extraction-Workflow-using-n8n',
+    'Extract-seller-and-client-information-from-photos-using-OCR',
+    'Yoga-Pose-Estimation-with-YOLO',
+    'football-tracking',
+    'medical-segmentation',
+    'ai-planning-agent',
 ];
 
 const staticPages = [{

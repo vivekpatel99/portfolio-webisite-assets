@@ -1,0 +1,16 @@
+{
+  "imageResponses": "omit",
+  "imageOptions": {
+    "format": "png",
+    "quality": 80,
+    "maxWidth": 1280
+  },
+  "actionTimeout": 5000,
+  "navigationTimeout": 60000,
+  "defaultExpectation": {
+    "includeSnapshot": false,
+    "includeCode": false,
+    "includeConsole": false,
+    "includeTabs": false
+  }
+}

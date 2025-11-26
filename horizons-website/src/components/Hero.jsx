@@ -68,10 +68,21 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto"
+            className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto"
           >
-            I build end-to-end intelligent automation systems combining Computer Vision, Web Scraping, and AI Agents to solve complex data problems faster and cheaper than hiring multiple specialists.
+            I help businesses automate complex data workflows using Computer Vision, Web Scraping, and AI Agents—delivering production-ready solutions faster and cheaper than hiring multiple specialists.
           </motion.p>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+            className="inline-flex items-center gap-4 px-5 py-2.5 bg-white/5 border border-white/10 rounded-full mb-10"
+          >
+            <span className="text-accent-purple font-semibold">Starting at €80/hour</span>
+            <span className="text-gray-400">•</span>
+            <span className="text-gray-300">Based in Europe</span>
+          </motion.div>
 
           <motion.div
             initial={{ opacity: 0, y: 30 }}

@@ -47,10 +47,10 @@ const defaultStats = [
         description: 'Consistent 5-star reviews and positive testimonials from clients who value measurable results.',
 },
 {
-  value: 80,
-    suffix: '+',
-      label: 'Freelance Hours',
-        description: 'Hours spent building and optimizing real-world, production-ready AI solutions on Upwork and direct contracts.',
+  value: 300,
+  suffix: '+',
+  label: 'Hours Delivered',
+  description: 'Hours spent building production-ready AI solutions—from Computer Vision pipelines to intelligent automation workflows.',
 },
 {
   value: 9,

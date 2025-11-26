@@ -26,28 +26,28 @@ const FreelancerMapIcon = () => (
 const connectOptions = [
   {
     title: 'Hire on Upwork',
-    description: 'Established freelancer with a proven track record on Upwork.',
+    description: 'Established freelancer with 100% job success. Usually responds within 24 hours.',
     icon: UpworkIcon,
-    link: socialLinks.upwork, // Using centralized link
+    link: `${socialLinks.upwork}?mp_source=portfolio&utm_medium=connect_section`,
     external: true,
   },
   {
     title: 'Work on Freelancer.com',
-    description: 'Direct collaboration on the Freelancer.com platform.',
+    description: 'Direct collaboration on Freelancer.com. Usually responds within 24 hours.',
     icon: FreelancerIcon,
-    link: socialLinks.freelancer, // Using centralized link
+    link: `${socialLinks.freelancer}?utm_source=portfolio&utm_medium=connect_section`,
     external: true,
   },
   {
     title: 'Collaborate on Freelancermap',
-    description: 'European-focused platform for direct engagement.',
+    description: 'European-focused platform, ideal for EU clients. Usually responds within 24 hours.',
     icon: FreelancerMapIcon,
-    link: socialLinks.freelancerMap, // Using centralized link
+    link: `${socialLinks.freelancerMap}?utm_source=portfolio&utm_medium=connect_section`,
     external: true,
   },
   {
     title: 'Direct Message',
-    description: 'Contact me directly for custom projects or inquiries.',
+    description: 'Contact me directly for custom projects. Fastest response - typically same day.',
     icon: Mail,
     link: '/contact',
     external: false,

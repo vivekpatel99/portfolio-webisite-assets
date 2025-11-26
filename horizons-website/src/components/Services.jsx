@@ -4,13 +4,13 @@ import { Plus } from 'lucide-react'; // Changed import from ArrowRight, ArrowDow
 
 const services = [{
   title: 'COMPUTER VISION & REAL-TIME PROCESSING',
-  description: ' Optimized deep learning inference for production systems. Real-time object detection, image classification, video analytics. Specialized in CUDA acceleration and edge deployment.'
+  description: 'Automate visual inspection and reduce manual review time by 90%+. Real-time object detection, image classification, video analytics with optimized deep learning inference. Specialized in CUDA acceleration and edge deployment for production systems.'
 }, {
   title: 'INTELLIGENT WEB SCRAPING & DATA EXTRACTION',
-  description: ' Automated data extraction from websites, parsing structured/unstr    uctured data, validation, and standardization. Handle complex workflows with robots.txt compliance and geo-tagging.'
+  description: 'Extract thousands of records daily and turn unstructured data into actionable insights. Automated data extraction from websites with parsing, validation, and standardization. Handle complex workflows with robots.txt compliance and anti-blocking strategies.'
 }, {
   title: 'AI AGENTS & AUTOMATION WORKFLOWS',
-  description: 'Custom AI agents using LangChain, n8n, and LLMs. End-to-end automation workflows or complex data problems. Connect vision, scraping, and decision-making in one pipeline.'
+  description: 'Automate repetitive decisions and reduce manual processing by 40+ hours/week. Custom AI agents using LangChain, n8n, and LLMs. Connect vision, scraping, and decision-making in one intelligent pipeline.'
 }];
 const Services = () => {
   const [activeIndex, setActiveIndex] = useState(0);
