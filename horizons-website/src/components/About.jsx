@@ -15,10 +15,11 @@ const About = () => {
             transition={{ duration: 0.8, ease: 'easeOut' }}
           >
             <div className="rounded-2xl overflow-hidden aspect-[4/3]">
-              <img 
+              <img
                 className="w-full h-full object-cover object-[center_28%]"
-                alt="Vivek Patel, AI Engineer specializing in Computer Vision" 
-                src="https://raw.githubusercontent.com/vivekpatel99/portfolio-webisite-assets/e79d026c68edb3b0c2c1e02dc0420b422560f633/images/vivek-black-and-white.png" 
+                alt="Vivek Patel, AI Engineer specializing in Computer Vision"
+                src="https://raw.githubusercontent.com/vivekpatel99/portfolio-webisite-assets/e79d026c68edb3b0c2c1e02dc0420b422560f633/images/vivek-black-and-white.png"
+                loading="lazy"
               />
             </div>
           </motion.div>
@@ -55,10 +56,11 @@ const About = () => {
             className="lg:order-last"
           >
             <div className="rounded-2xl overflow-hidden aspect-[4/3]">
-              <img 
-                className="w-full h-full object-cover" 
-                alt="Diverse team collaborating on a project" 
-                src="https://horizons-cdn.hostinger.com/6c79ee82-b048-4e51-aa3e-90c95281746e/michael-t-rxri-ho62y4-unsplash-2-tvxRc.jpg" 
+              <img
+                className="w-full h-full object-cover"
+                alt="Diverse team collaborating on a project"
+                src="https://horizons-cdn.hostinger.com/6c79ee82-b048-4e51-aa3e-90c95281746e/michael-t-rxri-ho62y4-unsplash-2-tvxRc.jpg"
+                loading="lazy"
               />
             </div>
           </motion.div>
