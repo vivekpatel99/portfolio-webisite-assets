@@ -118,8 +118,8 @@ const Contact = () => {
     <motion.div initial="initial" animate="in" exit="out" variants={pageVariants} transition={pageTransition}>
       <Helmet>
         <title>Contact | Vivek Patel, AI & Computer Vision Engineer</title>
-        <meta name="description" content="Get a project quote from Vivek Patel. Available for freelance Computer Vision, AI, and web scraping projects. Let's discuss your idea and bring it to life with production-ready solutions." />
-        <meta name="keywords" content="Contact Vivek Patel, Hire AI Engineer, Project Quote, Freelance Developer Inquiry, AI Collaboration, Computer Vision Expert" />
+        <meta name="description" content="Hire Vivek Patel for your AI project. Freelance Computer Vision, Web Scraping & n8n Automation expert based in Europe. Get a quote within 24 hours. €80/hour." />
+        <meta name="keywords" content="Hire AI Engineer Europe, Computer Vision Freelancer, n8n Developer, Web Scraping Expert, Project Quote, LangChain Developer, YOLO Expert" />
         <link rel="canonical" href="https://www.vivekapatel.com/contact" />
       </Helmet>
       
