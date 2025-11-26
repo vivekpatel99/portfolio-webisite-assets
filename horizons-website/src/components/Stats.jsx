@@ -49,14 +49,14 @@ const defaultStats = [
 {
   value: 300,
   suffix: '+',
-  label: 'Hours Delivered',
-  description: 'Hours spent building production-ready AI solutions—from Computer Vision pipelines to intelligent automation workflows.',
+  label: 'Hours of Solutions Delivered',
+  description: 'Production-ready AI solutions—from Computer Vision pipelines to intelligent automation workflows—delivered to clients.',
 },
 {
   value: 9,
     suffix: '+',
-      label: 'Industry Experience (yrs)',
-        description: 'Optimized real-time image stitching with CUDA & OpenCV at Magna—cut processing time from 37s to 2.5s and engineered vision pipelines for autonomous systems.',
+      label: 'Years in Production AI',
+        description: 'Building and optimizing real-time AI systems in production environments at companies like MAGNA International.',
 },
 ];
 
