@@ -1,12 +1,31 @@
 {
-  "imageResponses": "omit",
-  "imageOptions": {
-    "format": "png",
-    "quality": 80,
-    "maxWidth": 1280
+  "browser": {
+    "browserName": "chromium",
+    "headless": true,
+    "launchOptions": {
+      "headless": true
+    },
+    "contextOptions": {
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "deviceScaleFactor": 1
+    }
   },
-  "actionTimeout": 5000,
-  "navigationTimeout": 60000,
+  "imageResponses": "allow",
+  "imageOptions": {
+    "format": "jpeg",
+    "quality": 70,
+    "maxWidth": 1280,
+    "maxHeight": 720
+  },
+  "timeouts": {
+    "action": 10000,
+    "navigation": 30000
+  },
+  "outputDir": "./playwright-output",
+  "capabilities": ["core"],
   "defaultExpectation": {
     "includeSnapshot": false,
     "includeCode": false,
