@@ -14,11 +14,15 @@
     }
   },
   "imageResponses": "allow",
+  "screenshotOptions": {
+    "fullPage": false
+  },
   "imageOptions": {
     "format": "jpeg",
     "quality": 70,
     "maxWidth": 1280,
-    "maxHeight": 720
+    "maxHeight": 720,
+    "fullPage": false
   },
   "timeouts": {
     "action": 10000,

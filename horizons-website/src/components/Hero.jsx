@@ -73,6 +73,15 @@ const Hero = () => {
             Spending 40+ hours a week on manual data processing? I help businesses automate complex data workflows using Computer Vision, Web Scraping, and AI Agents—delivering production-ready solutions faster and cheaper than hiring multiple specialists.
           </motion.p>
 
+          <motion.p
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.45 }}
+            className="text-sm text-gray-500 mb-6"
+          >
+            Work directly with me—no account managers, no handoffs.
+          </motion.p>
+
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}

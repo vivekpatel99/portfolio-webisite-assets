@@ -11,7 +11,6 @@ import Stats from '@/components/Stats';
 import Connect from '@/components/Connect';
 import CTA from '@/components/CTA';
 import SectionAnimator from '@/components/SectionAnimator';
-import ErrorButton from '@/components/ErrorButton';
 
 const Home = () => {
   return (
