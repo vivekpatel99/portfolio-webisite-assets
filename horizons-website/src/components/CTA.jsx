@@ -17,7 +17,7 @@ const CTA = () => {
           <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight uppercase">
             Ready to Start Your <span className="text-accent-purple">Project</span>?
           </h2>
-          <p className="text-xl text-gray-300 mb-12 max-w-2xl mx-auto">Let's collaborate to create something extraordinary. I'm here to turn your vision into a reality that drives results.</p>
+          <p className="text-xl text-gray-300 mb-12 max-w-2xl mx-auto">Let's build your next AI solution together. You'll get production-ready code, clear communication at every milestone, and 30 days of support after delivery—so your team never feels stuck.</p>
           <div>
             <Button onClick={handleCTAClick} size="lg" className="bg-accent-purple hover:bg-accent-purple/90 text-white font-bold px-10 py-7 text-xl rounded-full group">
               Get a Free Quote
