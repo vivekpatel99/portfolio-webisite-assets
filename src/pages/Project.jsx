@@ -7,6 +7,7 @@ import SectionAnimator from '@/components/SectionAnimator';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, ArrowLeft } from 'lucide-react';
 import { toast } from "@/components/ui/use-toast";
+import { projectGallery } from '@/config/links';
 
 // Mock data for projects
 const projectData = {
@@ -19,18 +20,18 @@ const projectData = {
     images: {
       hero: {
         alt: 'Main dashboard of a modern banking application',
-        src: 'https://horizons-cdn.hostinger.com/6c79ee82-b048-4e51-aa3e-90c95281746e/gemini_generated_image_n6u5epn6u5epn6u5-5ABrF.png'
+        src: projectGallery.hero
       },
       gallery: [{
         alt: 'Detailed view of a transaction history page',
-        src: 'https://horizons-cdn.hostinger.com/6c79ee82-b048-4e51-aa3e-90c95281746e/gemini_generated_image_mxgp1bmxgp1bmxgp-IDwMQ.png'
+        src: projectGallery.gallery1
       }, {
         alt: 'Analytics dashboard showing spending habits',
-        src: 'https://horizons-cdn.hostinger.com/6c79ee82-b048-4e51-aa3e-90c95281746e/gemini_generated_image_mxgp1bmxgp1bmxgp-1-RqwfI.png'
+        src: projectGallery.gallery2
       }],
       gallery2: [{
         alt: 'User setting up a new payment on the banking app',
-        src: 'https://horizons-cdn.hostinger.com/6c79ee82-b048-4e51-aa3e-90c95281746e/professional-exchange-BmQpX.png'
+        src: projectGallery.gallery3
       }]
     },
     stats: [{

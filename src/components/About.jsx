@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { profileImages } from '@/config/links';
 
 const About = () => {
   return (
@@ -18,7 +19,7 @@ const About = () => {
               <img
                 className="w-full h-full object-cover object-[center_28%]"
                 alt="Vivek Patel, AI Engineer specializing in Computer Vision"
-                src="https://raw.githubusercontent.com/vivekpatel99/portfolio-webisite-assets/e79d026c68edb3b0c2c1e02dc0420b422560f633/images/vivek-black-and-white.png"
+                src={profileImages.aboutPhoto}
                 loading="lazy"
               />
             </div>
@@ -59,7 +60,7 @@ const About = () => {
               <img
                 className="w-full h-full object-cover"
                 alt="Diverse team collaborating on a project"
-                src="https://horizons-cdn.hostinger.com/6c79ee82-b048-4e51-aa3e-90c95281746e/michael-t-rxri-ho62y4-unsplash-2-tvxRc.jpg"
+                src={profileImages.teamCollaboration}
                 loading="lazy"
               />
             </div>

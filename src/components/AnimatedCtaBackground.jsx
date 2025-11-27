@@ -1,7 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { backgrounds } from '@/config/links';
 
-const imageUrl = 'https://horizons-cdn.hostinger.com/6c79ee82-b048-4e51-aa3e-90c95281746e/71f6723b117af5fb7e36d829dfcd6b7f.jpg';
+const imageUrl = backgrounds.cta;
 
 const layers = [
   {

@@ -1,27 +1,28 @@
 import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { techIcons } from '@/config/links';
 
 const techStack = [
-  { name: 'Git', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg' },
-  { name: 'OpenCV', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg' },
-  { name: 'YOLO', logo: 'https://raw.githubusercontent.com/ultralytics/assets/main/logo/Ultralytics_Logotype_Original.svg' },
-  { name: 'TensorFlow', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg' },
-  { name: 'PyTorch', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg' },
-  { name: 'n8n', logo: 'https://avatars.githubusercontent.com/u/45487711?s=200&v=4' },
-  { name: 'Python', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
-  { name: 'LangChain', logo: 'https://avatars.githubusercontent.com/u/126733545?s=200&v=4' },
-  { name: 'Streamlit', logo: 'https://streamlit.io/images/brand/streamlit-mark-color.png' },
-  { name: 'Claude', logo: 'https://raw.githubusercontent.com/vivekpatel99/my-portfolio-webisite/main/horizons-website/public/assets/logos/claude-color.svg' },
-  { name: 'OpenAI', logo: 'https://cdn.worldvectorlogo.com/logos/openai-2.svg' },
-  { name: 'FastAPI', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg' },
-  { name: 'AWS', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg' },
-  { name: 'MLflow', logo: 'https://www.mlflow.org/img/mlflow-black.svg' },
-  { name: 'Selenium', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg' },
-  { name: 'Hugging Face', logo: 'https://huggingface.co/front/assets/huggingface_logo.svg' },
-  { name: 'Docker', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg' },
-  { name: 'PostgreSQL', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg' },
-  { name: 'ONNX', logo: 'https://www.vectorlogo.zone/logos/onnxai/onnxai-icon.svg' },
-  { name: 'Kubernetes', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg' },
+  { name: 'Git', logo: techIcons.git },
+  { name: 'OpenCV', logo: techIcons.opencv },
+  { name: 'YOLO', logo: techIcons.yolo },
+  { name: 'TensorFlow', logo: techIcons.tensorflow },
+  { name: 'PyTorch', logo: techIcons.pytorch },
+  { name: 'n8n', logo: techIcons.n8n },
+  { name: 'Python', logo: techIcons.python },
+  { name: 'LangChain', logo: techIcons.langchain },
+  { name: 'Streamlit', logo: techIcons.streamlit },
+  { name: 'Claude', logo: techIcons.claude },
+  { name: 'OpenAI', logo: techIcons.openai },
+  { name: 'FastAPI', logo: techIcons.fastapi },
+  { name: 'AWS', logo: techIcons.aws },
+  { name: 'MLflow', logo: techIcons.mlflow },
+  { name: 'Selenium', logo: techIcons.selenium },
+  { name: 'Hugging Face', logo: techIcons.huggingface },
+  { name: 'Docker', logo: techIcons.docker },
+  { name: 'PostgreSQL', logo: techIcons.postgresql },
+  { name: 'ONNX', logo: techIcons.onnx },
+  { name: 'Kubernetes', logo: techIcons.kubernetes },
 ];
 
 const marqueeTech = [...techStack, ...techStack];

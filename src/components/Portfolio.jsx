@@ -2,13 +2,14 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowUpRight } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import { portfolioImages } from '@/config/links';
 
 const projects = [
   {
     id: 1,
     slug: 'Automated-Data-Extraction-Workflow-using-n8n',
     title: 'Automated Data Extraction — n8n + OpenAI',
-    imgUrl: "https://www.upwork.com/att/download/portfolio/persons/uid/1883842334427528625/profile/projects/files/afa0fdb2-5e26-45a5-b7c2-11b3f2e7555e",
+    imgUrl: portfolioImages.n8nWorkflow,
     imgAlt: "An n8n workflow for automated data extraction from German websites.",
     externalLink: "https://www.upwork.com/freelancers/vivekpatel99?p=1981676982472949760",
     isExternal: true
@@ -17,16 +18,16 @@ const projects = [
     id: 2,
     slug: 'Extract-seller-and-client-information-from-photos-using-OCR',
     title: 'Invoice OCR Data Extraction',
-    imgUrl: "https://raw.githubusercontent.com/vivekpatel99/invoice-data-extraction-using-ocr/main/output/original_with_bboxes_demo.jpg",
+    imgUrl: portfolioImages.invoiceOcr,
     imgAlt: "Invoice image with bounding boxes showing extracted client information via OCR.",
-    externalLink: "https://www.upwork.com/freelancers/vivekpatel99?p=1961697513038176256", 
+    externalLink: "https://www.upwork.com/freelancers/vivekpatel99?p=1961697513038176256",
     isExternal: true
   },
   {
     id: 3,
     slug: 'Yoga-Pose-Estimation-with-YOLO',
     title: 'Real-time Yoga Pose Detection — YOLO',
-    imgUrl: "https://www.upwork.com/att/download/portfolio/persons/uid/1883842334427528625/profile/projects/files/2f4283c5-deca-4a2a-b17d-07033247de19",
+    imgUrl: portfolioImages.yogaPose,
     imgAlt: "YOLO model detecting and estimating a yoga pose in an image.",
     externalLink: "https://www.upwork.com/freelancers/vivekpatel99?p=1962080616292315136",
     isExternal: true
@@ -35,7 +36,7 @@ const projects = [
     id: 4,
     slug: 'football-tracking',
     title: 'Multi-Player Sports Tracking — YOLO + SigLIP',
-    imgUrl: "https://raw.githubusercontent.com/vivekpatel99/football-players-tracking-yolo/main/readme-assets/yolov12l_processed_121364_0.gif",
+    imgUrl: portfolioImages.footballTracking,
     imgAlt: "Animated GIF showing real-time football player tracking using YOLO and SigLIP.",
     externalLink: "https://github.com/vivekpatel99/football-players-tracking-yolo",
     isExternal: true
@@ -44,7 +45,7 @@ const projects = [
     id: 5,
     slug: 'medical-segmentation',
     title: 'Medical Image Segmentation — VGG-FCN',
-    imgUrl: "https://raw.githubusercontent.com/vivekpatel99/breast-cancer-segmentation-vgg-fcn-pytorch/main/results/predictions_animation.gif",
+    imgUrl: portfolioImages.medicalSegmentation,
     imgAlt: "Animation of a VGG-FCN model performing breast cancer segmentation on medical images.",
     externalLink: "https://github.com/vivekpatel99/breast-cancer-segmentation-vgg-fcn-pytorch",
     isExternal: true
@@ -53,7 +54,7 @@ const projects = [
     id: 6,
     slug: 'ai-planning-agent',
     title: 'AI Planning Agent — LangGraph',
-    imgUrl: "https://raw.githubusercontent.com/vivekpatel99/project-planning-genie/main/assets/final_graph.png",
+    imgUrl: portfolioImages.aiPlanningAgent,
     imgAlt: "A LangGraph graph visualization for an AI project planning agent.",
     externalLink: "https://github.com/vivekpatel99/project-planning-genie",
     isExternal: true
