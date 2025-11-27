@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route, useLocation, Navigate } from 'react-router-dom';
 import Layout from '@/components/Layout';
 import Home from '@/pages/Home';
 import Contact from '@/pages/Contact';
@@ -19,6 +19,7 @@ function App() {
           <Route path="project/:projectId" element={<Project />} />
           <Route path="legal" element={<Legal />} /> {/* Updated route */}
           <Route path="data-policy" element={<DataPolicy />} /> {/* Updated route */}
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Route>
       </Routes>
     </AnimatePresence>

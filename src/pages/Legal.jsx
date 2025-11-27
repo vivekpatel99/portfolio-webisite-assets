@@ -24,6 +24,18 @@ const Legal = () => {
         <title>Privacy Policy | Vivek Patel</title>
         <meta name="description" content="Privacy Policy for vivek-patel.com, outlining how personal data is collected, used, and protected in compliance with GDPR." />
         <link rel="canonical" href="https://www.vivekapatel.com/legal" />
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.vivekapatel.com/legal" />
+        <meta property="og:title" content="Privacy Policy | Vivek Patel" />
+        <meta property="og:description" content="Privacy Policy for vivekapatel.com, outlining how personal data is collected, used, and protected in compliance with GDPR." />
+        <meta property="og:image" content="https://www.vivekapatel.com/og-image.png" />
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://www.vivekapatel.com/legal" />
+        <meta name="twitter:title" content="Privacy Policy | Vivek Patel" />
+        <meta name="twitter:description" content="Privacy Policy for vivekapatel.com, outlining how personal data is collected, used, and protected in compliance with GDPR." />
+        <meta name="twitter:image" content="https://www.vivekapatel.com/og-image.png" />
       </Helmet>
       <div className="container mx-auto px-6 max-w-4xl">
         <h1 className="text-4xl md:text-5xl font-bold text-white mb-8">Privacy Policy</h1>

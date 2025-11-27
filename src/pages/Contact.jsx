@@ -121,6 +121,18 @@ const Contact = () => {
         <meta name="description" content="Hire Vivek Patel for your AI project. Freelance Computer Vision, Web Scraping & n8n Automation expert based in Europe. Get a quote within 24 hours. €80/hour." />
         <meta name="keywords" content="Hire AI Engineer Europe, Computer Vision Freelancer, n8n Developer, Web Scraping Expert, Project Quote, LangChain Developer, YOLO Expert" />
         <link rel="canonical" href="https://www.vivekapatel.com/contact" />
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.vivekapatel.com/contact" />
+        <meta property="og:title" content="Contact | Vivek Patel, AI & Computer Vision Engineer" />
+        <meta property="og:description" content="Hire Vivek Patel for your AI project. Freelance Computer Vision, Web Scraping & n8n Automation expert based in Europe. Get a quote within 24 hours." />
+        <meta property="og:image" content="https://www.vivekapatel.com/og-image.png" />
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://www.vivekapatel.com/contact" />
+        <meta name="twitter:title" content="Contact | Vivek Patel, AI & Computer Vision Engineer" />
+        <meta name="twitter:description" content="Hire Vivek Patel for your AI project. Freelance Computer Vision, Web Scraping & n8n Automation expert based in Europe. Get a quote within 24 hours." />
+        <meta name="twitter:image" content="https://www.vivekapatel.com/og-image.png" />
       </Helmet>
       
       <section className="bg-[#0C0D0D] text-white py-24 sm:py-32">
@@ -131,7 +143,7 @@ const Contact = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
           >
-            <h1 className="text-4xl md:text-6xl font-bold text-white uppercase mb-4 leading-tight">
+            <h1 className="text-2xl sm:text-3xl md:text-6xl font-bold text-white uppercase mb-4 leading-tight break-words">
             Let's Build Your <span className="text-accent-purple">Computer Vision</span>, <span className="text-accent-purple">Web Scraping</span> & <span className="text-accent-purple">AI</span> Projects — <span className="text-accent-purple">€80/hour</span>
             </h1>
             <p className="text-lg text-gray-400 mb-12">

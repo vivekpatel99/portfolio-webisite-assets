@@ -30,6 +30,18 @@ const DataPolicy = () => {
         <title>Cookie Policy | Vivek Patel</title>
         <meta name="description" content="Learn about the cookies used on vivek-patel.com, why they are used, and how you can manage them." />
         <link rel="canonical" href="https://www.vivekapatel.com/data-policy" />
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.vivekapatel.com/data-policy" />
+        <meta property="og:title" content="Cookie Policy | Vivek Patel" />
+        <meta property="og:description" content="Learn about the cookies used on vivekapatel.com, why they are used, and how you can manage them." />
+        <meta property="og:image" content="https://www.vivekapatel.com/og-image.png" />
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://www.vivekapatel.com/data-policy" />
+        <meta name="twitter:title" content="Cookie Policy | Vivek Patel" />
+        <meta name="twitter:description" content="Learn about the cookies used on vivekapatel.com, why they are used, and how you can manage them." />
+        <meta name="twitter:image" content="https://www.vivekapatel.com/og-image.png" />
       </Helmet>
       <div className="container mx-auto px-6 max-w-4xl">
         <h1 className="text-4xl md:text-5xl font-bold text-white mb-8">Cookie Policy</h1>

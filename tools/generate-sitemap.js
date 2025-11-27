@@ -21,7 +21,7 @@ const staticPages = [{
 }, {
     loc: `${BASE_URL}/contact`,
     lastmod: today,
-    priority: '0.80'
+    priority: '0.95'
 }, {
     loc: `${BASE_URL}/legal`,
     lastmod: today,

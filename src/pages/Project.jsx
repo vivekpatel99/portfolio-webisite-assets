@@ -105,6 +105,18 @@ const Project = () => {
         <meta name="description" content={`Case study for the ${project.title} project. Discover the challenges, solutions, and results achieved by Vivek Patel, AI & Computer Vision Engineer.`} />
         <meta name="keywords" content={`${project.title}, case study, portfolio, Vivek Patel, ${project.category}, AI project, web development`} />
         <link rel="canonical" href={`https://www.vivekapatel.com/project/${projectId}`} />
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content={`https://www.vivekapatel.com/project/${projectId}`} />
+        <meta property="og:title" content={`${project.title} | Project Case Study - Vivek Patel`} />
+        <meta property="og:description" content={`Case study for the ${project.title} project. Discover the challenges, solutions, and results achieved.`} />
+        <meta property="og:image" content={project.images.hero.src} />
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content={`https://www.vivekapatel.com/project/${projectId}`} />
+        <meta name="twitter:title" content={`${project.title} | Project Case Study - Vivek Patel`} />
+        <meta name="twitter:description" content={`Case study for the ${project.title} project. Discover the challenges, solutions, and results achieved.`} />
+        <meta name="twitter:image" content={project.images.hero.src} />
       </Helmet>
 
       <main>

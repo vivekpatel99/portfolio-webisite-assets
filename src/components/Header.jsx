@@ -123,7 +123,7 @@ const Header = () => {
                 <Link to="/" onClick={handleHomeClick} className="flex items-center">
                   <img src={assetsLinks.logo} alt="Vivek Patel Logo" className="h-12" />
                 </Link>
-                <button onClick={() => setIsOpen(false)} className="text-white">
+                <button onClick={() => setIsOpen(false)} className="text-white" aria-label="Close navigation menu">
                   <X size={28} />
                 </button>
               </div>

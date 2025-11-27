@@ -92,11 +92,12 @@ const Footer = () => {
                         <p className="font-semibold text-white mb-6">Connect With Me</p>
                         <div className="flex space-x-4">
                             {socialIcons.map((social) => (
-                                <button 
-                                    key={social.name} 
+                                <button
+                                    key={social.name}
                                     onClick={() => handleSocialClick(social.name)}
                                     className="text-gray-400 hover:text-accent-purple transition-colors duration-300"
                                     title={`Visit my ${social.name}`}
+                                    aria-label={`Visit my ${social.name} profile`}
                                 >
                                     {social.icon}
                                 </button>

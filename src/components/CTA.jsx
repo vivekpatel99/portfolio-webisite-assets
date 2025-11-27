@@ -14,7 +14,7 @@ const CTA = () => {
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight uppercase">
+          <h2 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight uppercase break-words">
             Ready to Start Your <span className="text-accent-purple">Project</span>?
           </h2>
           <p className="text-xl text-gray-300 mb-12 max-w-2xl mx-auto">Let's build your next AI solution together. You'll get production-ready code, clear communication at every milestone, and 30 days of support after delivery—so your team never feels stuck.</p>

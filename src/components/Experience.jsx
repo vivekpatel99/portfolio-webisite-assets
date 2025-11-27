@@ -62,109 +62,103 @@ const ExperienceItem = ({ item, index }) => {
   const isLeft = index % 2 === 0;
   const IconComponent = item.icon || Briefcase;
 
+  const CardContent = ({ className = "" }) => (
+    <Collapsible>
+      <div className={`bg-white/5 rounded-xl border border-white/10 p-5 transition-all hover:border-accent-purple/50 hover:bg-white/10 ${className}`}>
+        <p className="text-sm text-gray-400 mb-1">{item.date}</p>
+        <CollapsibleTrigger className="w-full text-left text-accent-purple">
+          <div className="flex justify-between items-center w-full gap-3">
+            <div className="flex-1">
+              <h3 className="text-lg font-bold text-white leading-tight">{item.title}</h3>
+              <p className="text-sm text-accent-purple font-semibold mt-1">{item.company}</p>
+            </div>
+            <div className="p-2 rounded-full bg-white/10 hover:bg-accent-purple/20 transition-colors flex-shrink-0">
+              <ChevronsUpDown className="h-4 w-4 text-accent-purple" />
+            </div>
+          </div>
+        </CollapsibleTrigger>
+
+        <CollapsibleContent className="mt-4">
+          <div className="bg-accent-purple/10 rounded-lg p-3 mb-3 border border-accent-purple/20">
+            <div className="flex items-center gap-2 mb-1">
+              <IconComponent className="h-4 w-4 text-accent-purple" />
+              <span className="text-sm font-semibold text-accent-purple">{item.highlight}</span>
+            </div>
+          </div>
+          <p className="text-gray-400 text-sm mb-4 leading-relaxed">{item.description}</p>
+          <div className="flex flex-wrap gap-2">
+            {item.tags.map((tag, idx) => (
+              <span key={idx} className="bg-accent-purple/10 text-accent-purple text-xs font-semibold px-2.5 py-1 rounded-full border border-accent-purple/20">
+                {tag}
+              </span>
+            ))}
+          </div>
+        </CollapsibleContent>
+      </div>
+    </Collapsible>
+  );
+
   return (
-    <div className="flex items-start relative">
-      {/* Left content */}
-      <div className={`w-[calc(50%-2rem)] ${isLeft ? 'block' : 'invisible'}`}>
-        {isLeft && (
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 0.5 }}
-            className="pr-8"
-          >
-            <Collapsible>
-              <div className="bg-white/5 rounded-xl border border-white/10 p-5 transition-all hover:border-accent-purple/50 hover:bg-white/10">
-                <p className="text-sm text-gray-400 mb-1">{item.date}</p>
-                <CollapsibleTrigger className="w-full text-left text-accent-purple">
-                  <div className="flex justify-between items-center w-full gap-3">
-                    <div className="flex-1">
-                      <h3 className="text-lg font-bold text-white leading-tight">{item.title}</h3>
-                      <p className="text-sm text-accent-purple font-semibold mt-1">{item.company}</p>
-                    </div>
-                    <div className="p-2 rounded-full bg-white/10 hover:bg-accent-purple/20 transition-colors flex-shrink-0">
-                      <ChevronsUpDown className="h-4 w-4 text-accent-purple" />
-                    </div>
-                  </div>
-                </CollapsibleTrigger>
-
-                <CollapsibleContent className="mt-4">
-                  <div className="bg-accent-purple/10 rounded-lg p-3 mb-3 border border-accent-purple/20">
-                    <div className="flex items-center gap-2 mb-1">
-                      <IconComponent className="h-4 w-4 text-accent-purple" />
-                      <span className="text-sm font-semibold text-accent-purple">{item.highlight}</span>
-                    </div>
-                  </div>
-                  <p className="text-gray-400 text-sm mb-4 leading-relaxed">{item.description}</p>
-                  <div className="flex flex-wrap gap-2">
-                    {item.tags.map((tag, idx) => (
-                      <span key={idx} className="bg-accent-purple/10 text-accent-purple text-xs font-semibold px-2.5 py-1 rounded-full border border-accent-purple/20">
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                </CollapsibleContent>
-              </div>
-            </Collapsible>
-          </motion.div>
-        )}
-      </div>
-
-      {/* Center timeline node */}
-      <div className="flex flex-col items-center z-10 w-16">
-        <div className="flex items-center justify-center w-10 h-10 rounded-full bg-accent-purple/20 border-2 border-accent-purple">
-          <IconComponent className="w-5 h-5 text-accent-purple" />
+    <>
+      {/* Mobile/Tablet Layout (single column) */}
+      <div className="flex items-start relative lg:hidden">
+        <div className="flex flex-col items-center z-10 w-12 flex-shrink-0">
+          <div className="flex items-center justify-center w-10 h-10 rounded-full bg-accent-purple/20 border-2 border-accent-purple">
+            <IconComponent className="w-5 h-5 text-accent-purple" />
+          </div>
         </div>
-      </div>
-
-      {/* Right content */}
-      <div className={`w-[calc(50%-2rem)] ${!isLeft ? 'block' : 'invisible'}`}>
-        {!isLeft && (
+        <div className="flex-1 pl-4">
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, amount: 0.5 }}
+            viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.5 }}
-            className="pl-8"
           >
-            <Collapsible>
-              <div className="bg-white/5 rounded-xl border border-white/10 p-5 transition-all hover:border-accent-purple/50 hover:bg-white/10">
-                <p className="text-sm text-gray-400 mb-1">{item.date}</p>
-                <CollapsibleTrigger className="w-full text-left text-accent-purple">
-                  <div className="flex justify-between items-center w-full gap-3">
-                    <div className="flex-1">
-                      <h3 className="text-lg font-bold text-white leading-tight">{item.title}</h3>
-                      <p className="text-sm text-accent-purple font-semibold mt-1">{item.company}</p>
-                    </div>
-                    <div className="p-2 rounded-full bg-white/10 hover:bg-accent-purple/20 transition-colors flex-shrink-0">
-                      <ChevronsUpDown className="h-4 w-4 text-accent-purple" />
-                    </div>
-                  </div>
-                </CollapsibleTrigger>
-
-                <CollapsibleContent className="mt-4">
-                  <div className="bg-accent-purple/10 rounded-lg p-3 mb-3 border border-accent-purple/20">
-                    <div className="flex items-center gap-2 mb-1">
-                      <IconComponent className="h-4 w-4 text-accent-purple" />
-                      <span className="text-sm font-semibold text-accent-purple">{item.highlight}</span>
-                    </div>
-                  </div>
-                  <p className="text-gray-400 text-sm mb-4 leading-relaxed">{item.description}</p>
-                  <div className="flex flex-wrap gap-2">
-                    {item.tags.map((tag, idx) => (
-                      <span key={idx} className="bg-accent-purple/10 text-accent-purple text-xs font-semibold px-2.5 py-1 rounded-full border border-accent-purple/20">
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                </CollapsibleContent>
-              </div>
-            </Collapsible>
+            <CardContent />
           </motion.div>
-        )}
+        </div>
       </div>
-    </div>
+
+      {/* Desktop Layout (alternating columns) */}
+      <div className="hidden lg:flex items-start relative">
+        {/* Left content */}
+        <div className={`w-[calc(50%-2rem)] ${isLeft ? 'block' : 'invisible'}`}>
+          {isLeft && (
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.5 }}
+              className="pr-8"
+            >
+              <CardContent />
+            </motion.div>
+          )}
+        </div>
+
+        {/* Center timeline node */}
+        <div className="flex flex-col items-center z-10 w-16">
+          <div className="flex items-center justify-center w-10 h-10 rounded-full bg-accent-purple/20 border-2 border-accent-purple">
+            <IconComponent className="w-5 h-5 text-accent-purple" />
+          </div>
+        </div>
+
+        {/* Right content */}
+        <div className={`w-[calc(50%-2rem)] ${!isLeft ? 'block' : 'invisible'}`}>
+          {!isLeft && (
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.5 }}
+              className="pl-8"
+            >
+              <CardContent />
+            </motion.div>
+          )}
+        </div>
+      </div>
+    </>
   );
 };
 
@@ -189,8 +183,10 @@ const Experience = () => {
         </motion.div>
 
         <div className="relative">
-          {/* Continuous vertical line in the center */}
-          <div className="absolute left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-accent-purple/50 via-accent-purple/30 to-accent-purple/50 transform -translate-x-1/2"></div>
+          {/* Mobile timeline line (left side) */}
+          <div className="absolute left-[1.25rem] top-0 bottom-0 w-px bg-gradient-to-b from-accent-purple/50 via-accent-purple/30 to-accent-purple/50 lg:hidden"></div>
+          {/* Desktop timeline line (center) */}
+          <div className="absolute left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-accent-purple/50 via-accent-purple/30 to-accent-purple/50 transform -translate-x-1/2 hidden lg:block"></div>
 
           <div className="relative space-y-12">
             {experienceData.map((item, index) => (

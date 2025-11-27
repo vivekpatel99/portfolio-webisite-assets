@@ -131,7 +131,7 @@ const CookieConsentBanner = ({ onConsent, show, onHide }) => {
                 </CollapsibleContent>
               </Collapsible>
             </div>
-             <button onClick={() => { setIsManaging(false); if(onHide) onHide(); }} className="absolute top-4 right-4 text-gray-400 hover:text-white transition-colors">
+             <button onClick={() => { setIsManaging(false); if(onHide) onHide(); }} className="absolute top-4 right-4 text-gray-400 hover:text-white transition-colors" aria-label="Close cookie consent banner">
                 <X size={18} />
             </button>
           </div>

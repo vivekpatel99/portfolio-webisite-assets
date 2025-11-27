@@ -42,11 +42,17 @@ const Layout = () => {
 
   return (
     <>
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:bg-accent-purple focus:text-white focus:px-4 focus:py-2 focus:rounded-md"
+      >
+        Skip to main content
+      </a>
       <CustomCursor />
       {gaConsent && <GoogleAnalytics />}
       <div className="min-h-screen bg-[#0C0D0D] text-white overflow-x-hidden flex flex-col">
         <Header />
-        <main className="flex-grow">
+        <main id="main-content" className="flex-grow">
           <Outlet />
         </main>
         <Footer />

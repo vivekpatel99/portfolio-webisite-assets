@@ -1,19 +1,34 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 
 const useMousePosition = () => {
   const [position, setPosition] = useState({ x: -100, y: -100 });
+  const frameRef = useRef(null);
+  const latestPosition = useRef({ x: -100, y: -100 });
+
+  const updatePosition = useCallback(() => {
+    setPosition(latestPosition.current);
+    frameRef.current = null;
+  }, []);
 
   useEffect(() => {
     const handleMouseMove = (e) => {
-      setPosition({ x: e.clientX, y: e.clientY });
+      latestPosition.current = { x: e.clientX, y: e.clientY };
+
+      // Throttle updates to 60fps using requestAnimationFrame
+      if (frameRef.current === null) {
+        frameRef.current = requestAnimationFrame(updatePosition);
+      }
     };
 
     window.addEventListener('mousemove', handleMouseMove);
 
     return () => {
       window.removeEventListener('mousemove', handleMouseMove);
+      if (frameRef.current !== null) {
+        cancelAnimationFrame(frameRef.current);
+      }
     };
-  }, []);
+  }, [updatePosition]);
 
   return position;
 };
